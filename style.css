@@ -1,0 +1,135 @@
+  /* Include the padding and border in an element's total width and height */
+body {
+    
+    background-image: url('bg-image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+  }
+  /* Style the header */
+.card-header {
+  
+
+    background-color: purple;
+    
+    color: white;
+    font-weight: bolder;
+    
+    }
+    .card{
+        background-color: pink;
+        border-radius: 10px;
+    }
+    /* Style the input */
+input {
+    
+    border: none;
+    border-radius: 0;
+    width: 70%;
+    padding: 10px;
+     
+    
+    font-size: 15px;
+    box-shadow: 5px 15px 18px deeppink;
+    border:1px solid deeppink;
+    background: pink;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    
+
+  
+
+    padding: 10px 5px 10px;
+    background: deeppink;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border:1px solid deeppink;
+    border-radius: 0;
+    box-shadow: 5px 10px 18px deeppink;
+    color:white;
+    font-weight: bold;
+  }
+  
+  ul {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background:deeppink;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+
+  }
+  ul li:nth-child(odd) {
+    background: hotpink;
+  }
+  
+  
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: crimson;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 10px;
+    height: 15px;
+    width: 7px;
+    transform: rotate(45deg);
+    color: white;
+  }
+  
+  
+  
+  
+  
+.fa-trash, .fa-pencil-square-o, .fa-check-circle{
+    position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 12px 16px 12px 16px;
+  background: none;
+  border: none;
+  color: white;
+
+}
+.fa-pencil-square-o, .fa-check-circle{
+    right: 50px;
+}
+/* ul li:nth-child(odd) .fa-pencil-square-o,ul li:nth-child(odd) .fa-trash, ul li:nth-child(odd) .fa-check-circle{
+    background-color: deeppink;
+} */
+  
+.editInput{
+    
+    background: none;
+    border-bottom: purple 2px solid;
+    border-top:none ;
+    border-left: none;
+    border-right:none ;
+    outline: none;
+
+}
+ 
