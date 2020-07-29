@@ -1,4 +1,6 @@
-  /* Include the padding and border in an element's total width and height */
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Oleo+Script&display=swap');
+
+ /* Include the padding and border in an element's total width and height */
 body {
     
     background-image: url('bg-image.jpg');
@@ -8,6 +10,9 @@ body {
 
     
   }
+  *{
+    box-sizing: border-box;
+  }
   /* Style the header */
 .card-header {
   
@@ -15,13 +20,36 @@ body {
     background-color: purple;
     
     color: white;
-    font-weight: bolder;
+    font-weight: 700;
+    
+    font-size: 25px;
     
     }
     .card{
         background-color: pink;
         border-radius: 10px;
-    }
+        animation: fadeInRight 2s ease;
+       
+      }
+      @keyframes fadeInRight{
+          0%{
+              transform: translateX(40px);
+              opacity: 0;
+          }
+          100%{
+              transform: translateX(0px);
+              opacity: 1;
+          }
+      }
+      .card-body{
+        font-family: 'Oleo Script',cursive;
+
+      }
+      .card-footer{
+        font-family: 'Oleo Script',cursive;
+
+      }
+    
     /* Style the input */
 input {
     
